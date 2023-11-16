@@ -5,6 +5,7 @@ import { styles } from './styles';
 export default function Sigin({ navigation }) {
     return (
 
+
         <View style={styles.background}>
             <View style={styles.containerForm}>
                 <View style={styles.containerLogo}>
@@ -13,6 +14,7 @@ export default function Sigin({ navigation }) {
                         style={{ width: 200, height: 80 }}
                         resizeMode='contain'
                     />
+
                 </View>
                 <TextInput
                     style={styles.input}
@@ -47,6 +49,6 @@ export default function Sigin({ navigation }) {
                     <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}>  Criar Conta   </Text></Text>
             </View>
         </View>
-        // </ImageBackground>
+       
     );
 }
