@@ -18,18 +18,20 @@ export default function Sigin({ navigation }) {
                     style={styles.input}
 
                     onChangeText={() => { }}
-                    placeholder="  E-mail ou Nome de Usuário"
+                    placeholder="   E-mail ou Nome de Usuário"
                     placeholderTextColor='#d4d5d7'
-                    keyboardType="numeric"
+                    keyboardType="default"
+                    textAlignVertical='top'
                 />
 
                 <TextInput
                     style={styles.password}
                     onChangeText={() => { }}
                     secureTextEntry={true}
-                    placeholder="  Senha"
+                    placeholder="   Senha"
                     placeholderTextColor='#d4d5d7'
                     keyboardType="numeric"
+                    textAlignVertical='center'
                 />
 
                 <Text style={styles.EULA}>Ao entrar com sua conta, você declara possuir mais de 16 anos de
@@ -40,9 +42,9 @@ export default function Sigin({ navigation }) {
                     <Text style={styles.buttonText}>ENTRAR</Text>
                 </TouchableOpacity>
 
-                <Text style={styles.help}><Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}> Esqueceu a Senha? </Text>
+                <Text style={styles.help}><Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}>Esqueceu a Senha?  </Text>
                     |
-                    <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}> Criar Conta.</Text></Text>
+                    <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}>  Criar Conta   </Text></Text>
             </View>
         </View>
         // </ImageBackground>

@@ -31,25 +31,23 @@ export const styles = StyleSheet.create({
   input: {
 
     backgroundColor: '#24252a',
-    fontSize: 20,
+    fontSize: 16,
     color: '#d4d5d7',
     marginLeft: 10,
     marginRight: 10,
     height: 60,
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 15,
     display: 'flex',
     borderBottomColor: '#f97015',
     borderBottomWidth: 2,
-
 
   },
 
   password: {
 
-
     backgroundColor: '#141519',
-    fontSize: 20,
+    fontSize: 18,
     color: '#d4d5d7',
     marginLeft: 10,
     marginRight: 10,
@@ -59,7 +57,6 @@ export const styles = StyleSheet.create({
     display: 'flex',
     borderBottomColor: '#5c5c5e',
     borderBottomWidth: 2,
-
 
   },
 
@@ -76,7 +73,7 @@ export const styles = StyleSheet.create({
     borderWidth: 2,
     marginLeft: 10,
     marginRight: 10,
-    height: 40,
+    height: 50,
     alignItems: 'center',
     marginBottom: 10,
     display: 'flex',
@@ -87,7 +84,7 @@ export const styles = StyleSheet.create({
 
     fontWeight: 'bold',
     fontSize: 18,
-    marginTop: 6,
+    marginTop: 10,
     color: '#4a4a4a',
 
   },
