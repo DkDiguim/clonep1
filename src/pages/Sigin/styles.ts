@@ -2,73 +2,77 @@ import { StyleSheet } from 'react-native';
 
 export const styles = StyleSheet.create({
 
-  container: {
-    flex: 1,
-    justifyContent: 'center',
+
+  background: {
+
+    backgroundColor: '#000000',
+    height: '100%',
 
   },
 
   containerForm: {
 
-    marginTop: 400,
+    marginTop: 200,
+
 
   },
 
   containerLogo: {
 
+
     alignItems: 'center',
     justifyContent: 'center',
-    marginBottom: 30,
+    marginBottom: 40,
     height: 10,
 
   },
-  button1: {
 
-    display: 'flex',
-    backgroundColor: '#f9b718',
+
+  input: {
+
+    backgroundColor: '#24252a',
+    fontSize: 20,
+    color: '#d4d5d7',
     marginLeft: 10,
     marginRight: 10,
-    height: 40,
+    height: 60,
     alignItems: 'center',
     marginBottom: 10,
-    marginTop: 20,
-
-  },
-
-  buttonText1: {
-
-    fontWeight: 'bold',
-    marginBottom: 4,
     display: 'flex',
-    fontSize: 18,
-    marginTop: 6,
-    paddingLeft: 8,
-    color: '#1f1f17',
-    width: '100%',
-    height: 20,
-    textAlign: 'left',
-  },
+    borderBottomColor: '#f97015',
+    borderBottomWidth: 2,
 
-  coroa: {
-
-    float: 'left',
-    width: 20,
-    height: 20,
-    marginTop: 3,
-    marginLeft: 90,
 
   },
 
-  textocoroa: {
+  password: {
 
-    flexDirection: 'row',
+
+    backgroundColor: '#141519',
+    fontSize: 20,
+    color: '#d4d5d7',
+    marginLeft: 10,
+    marginRight: 10,
+    height: 60,
     alignItems: 'center',
+    marginBottom: 10,
+    display: 'flex',
+    borderBottomColor: '#5c5c5e',
+    borderBottomWidth: 2,
+
 
   },
 
-  button2: {
 
-    borderColor: '#e67c42',
+  link: {
+
+    color: '#f97015'
+
+  },
+
+  button: {
+
+    borderColor: '#4a4a4a',
     borderWidth: 2,
     marginLeft: 10,
     marginRight: 10,
@@ -76,32 +80,35 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     marginBottom: 10,
     display: 'flex',
+
   },
 
-  buttonText2: {
+  buttonText: {
 
     fontWeight: 'bold',
     fontSize: 18,
     marginTop: 6,
-    color: '#e67c42',
+    color: '#4a4a4a',
+
   },
 
-  criarConta: {
+  EULA: {
 
-    color: '#FFFFFF',
+    marginTop: 20,
+    color: '#c0bdbe',
     fontFamily: 'sans-serif',
-    fontSize: 13,
+    fontSize: 14,
     textAlign: 'center',
-    marginTop: 20,
+    marginBottom: 20,
 
   },
 
-  title: {
+  help: {
 
     marginTop: 20,
-    color: '#FFFFFF',
+    color: '#c0bdbe',
     fontFamily: 'sans-serif',
-    fontSize: 18,
+    fontSize: 15,
     textAlign: 'center',
     marginBottom: 20,
 

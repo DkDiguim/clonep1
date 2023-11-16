@@ -1,11 +1,11 @@
 import React from 'react';
-import { View, Text, StyleSheet, Image, TouchableOpacity, ImageBackground } from 'react-native';
-import {styles} from '../Welcome/styles';
+import { View, Text, StyleSheet, Image, TouchableOpacity, ImageBackground, TextInput } from 'react-native';
+import { styles } from './styles';
 
-export default function Sigin({navigation}) {
+export default function Sigin({ navigation }) {
     return (
-        // <ImageBackground source={require('../../assets/fundo2.png')} style={styles.container} resizeMode='cover'>
 
+        <View style={styles.background}>
             <View style={styles.containerForm}>
                 <View style={styles.containerLogo}>
                     <Image
@@ -14,27 +14,37 @@ export default function Sigin({navigation}) {
                         resizeMode='contain'
                     />
                 </View>
+                <TextInput
+                    style={styles.input}
 
-                <Text style={styles.title}>Todos os seus animes favoritos. Agora num só lugar.</Text>
+                    onChangeText={() => { }}
+                    placeholder="  E-mail ou Nome de Usuário"
+                    placeholderTextColor='#d4d5d7'
+                    keyboardType="numeric"
+                />
 
-                <View style={styles.button1}>
-                    <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
-                        <View style={styles.textocoroa}>
-                            <Image style={styles.coroa}
-                                source={require('../../assets/coroa.png')}
-                            />
-                            <Text style={styles.buttonText1}>EXPERIMENTE O TESTE GRATUITO</Text>
-                        </View>
-                    </TouchableOpacity>
-                </View>
-                <TouchableOpacity onPress={() => navigation.navigate('Sigin')} style={styles.button2}>
-                    <Text style={styles.buttonText2}>LOGIN</Text>
+                <TextInput
+                    style={styles.password}
+                    onChangeText={() => { }}
+                    secureTextEntry={true}
+                    placeholder="  Senha"
+                    placeholderTextColor='#d4d5d7'
+                    keyboardType="numeric"
+                />
+
+                <Text style={styles.EULA}>Ao entrar com sua conta, você declara possuir mais de 16 anos de
+                    idade e estar de acordo com nossos  <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}>Termos e Condições</Text> e nossa
+                    <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}> Política de Privacidade.</Text></Text>
+
+                <TouchableOpacity onPress={() => navigation.navigate('Sigin')} style={styles.button}>
+                    <Text style={styles.buttonText}>ENTRAR</Text>
                 </TouchableOpacity>
 
-                <Text style={styles.criarConta}>
-                    ou <Text onPress={() => console.log('Criar Conta pressionado')} style={{ color: '#F47521' }}>Criar Conta</Text>
-                </Text>
+                <Text style={styles.help}><Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}> Esqueceu a Senha? </Text>
+                    |
+                    <Text onPress={() => console.log('Criar Conta pressionado')} style={styles.link}> Criar Conta.</Text></Text>
             </View>
+        </View>
         // </ImageBackground>
     );
 }
